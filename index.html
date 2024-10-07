@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure and powerfull crypto wallet | Ctrl wallet </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon"
+        href="https://media.licdn.com/dms/image/v2/D4E0BAQHU2AjkMz7mwg/company-logo_200_200/company-logo_200_200/0/1721223695534/xdefi_wallet_logo?e=2147483647&v=beta&t=1QKGdmCRmg1ZcUPjpDsUxhnFoDovVHBdubjuN-6LGJQ "
+        type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+</head>
+
+<body>
+    <div class="head">
+        <div class="part-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 53">
+                <path fill-rule="evenodd"
+                    d="M0 0h52.414v52.414H0V0Zm20.384 34.19v7.33c0 1.194.967 2.159 2.159 2.159h7.329a2.16 2.16 0 0 0 2.16-2.16v-3.665c0-1.61.65-3.066 1.705-4.118a5.804 5.804 0 0 1 4.118-1.706h3.665a2.16 2.16 0 0 0 2.159-2.16v-7.327a2.16 2.16 0 0 0-2.16-2.16h-7.326a2.16 2.16 0 0 0-2.159 2.16v3.842a5.644 5.644 0 0 1-5.643 5.645h-3.842a2.16 2.16 0 0 0-2.16 2.16h-.005ZM8.736 29.871V22.54a2.16 2.16 0 0 1 2.16-2.16h3.847a5.644 5.644 0 0 0 5.644-5.643v-3.842c0-1.191.964-2.159 2.159-2.159h7.326a2.16 2.16 0 0 1 2.16 2.16v7.328a2.16 2.16 0 0 1-2.16 2.16h-3.665a5.805 5.805 0 0 0-4.117 1.706 5.795 5.795 0 0 0-1.706 4.117v3.665a2.16 2.16 0 0 1-2.16 2.16h-7.329a2.159 2.159 0 0 1-2.159-2.16Z">
+                </path>
+                <g clip-path="url(#a)">
+                    <path
+                        d="M117.773 7.508v9.247h6.796v5.042h-6.796v18.572c0 1.723.352 2.86 1.061 3.42.71.558 1.989.838 3.832.838h1.903v5.035h-2.161c-2.831 0-5.026-.226-6.59-.672-1.565-.459-2.719-1.33-3.448-2.62a6.817 6.817 0 0 1-.676-1.743c-.279-1.071-.418-2.355-.418-3.872V21.79h-4.767v-5.042h4.767V9.783l6.497-2.275Zm35.789-4.198h6.431v46.22h-6.431V3.31Zm-17.755 25.565v-12.12h-6.498v32.774h6.498V37.003c.04-3.658.524-6.572 1.445-8.747.922-2.175 2.413-3.812 4.469-4.91 2.062-1.097 4.826-1.755 8.301-1.968v-5.681c-2.957 0-5.364.432-7.207 1.29-1.843.859-3.302 2.249-4.376 4.165-1.074 1.915-1.863 4.483-2.38 7.716h-.259l.007.007Zm-32.262-8.955c.034.22.067.453.093.686.013.087.02.173.033.26M96.319 31.05h6.974c-.053.3-.099.612-.132.924-.02.153-.04.307-.053.46-.053.419-.113.811-.179 1.17-.497 2.754-1.459 5.235-2.878 7.457-1.697 2.654-3.998 4.73-6.895 6.22-2.89 1.49-6.252 2.242-10.064 2.242h-1.253c-4.197 0-7.903-.952-11.112-2.84-3.209-1.897-5.682-4.59-7.426-8.083-1.743-3.492-2.612-7.597-2.612-12.313s.869-8.8 2.612-12.253c1.744-3.446 4.204-6.1 7.4-7.956 3.182-1.836 6.895-2.767 11.131-2.767h1.253c3.82 0 7.187.745 10.104 2.242 2.918 1.496 5.225 3.572 6.922 6.22 1.545 2.407 2.539 5.115 2.997 8.148.033.22.066.452.093.685.013.087.02.173.033.26.04.299.066.611.093.924h-6.935c-.04-.313-.087-.625-.133-.924h-.007a1.378 1.378 0 0 0-.026-.167l-.438-2.009s0-.02-.006-.04c-.697-2.467-1.936-4.55-3.713-6.246-2.287-2.188-5.278-3.28-8.97-3.28h-1.254c-2.81 0-5.297.686-7.458 2.056-2.155 1.37-3.826 3.346-5 5.934-1.18 2.594-1.763 5.647-1.763 9.186 0 3.54.584 6.62 1.764 9.253 1.173 2.628 2.844 4.65 4.999 6.06 2.161 1.41 4.647 2.116 7.459 2.116h1.252c3.607 0 6.558-1.105 8.845-3.313a13.96 13.96 0 0 0 2.771-3.752v-.007c.338-.671.63-1.376.862-2.115.04-.113.067-.22.1-.332.205-.679.37-1.397.49-2.142a.23.23 0 0 1 .014-.067h.052c.027-.313.054-.625.093-.925l-.006-.026Z">
+                    </path>
+                </g>
+            </svg>
+        </div>
+        <div class="part-2">
+            <ul>
+                <li>$XDEFI</li>
+                <li>Support</li>
+                <li>Sequrity</li>
+                <li>Resources</li>
+            </ul>
+        </div>
+        <div class="part-3">
+            Download
+            <div class="green-lay">
+                Download
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div data-scroll data-scroll-speed="-10" class="page-1">
+            <h2>One wallet</h2>
+            <h2>for all your crypto</h2>
+            <h1>Take <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_298_3486)">
+                        <path
+                            d="M107.877 93.0896C107.028 100.259 100.246 107.024 93.0896 107.877C67.6993 110.709 42.3048 110.709 16.9104 107.877C9.74553 107.028 2.98467 100.254 2.1272 93.0896C-0.709066 67.6993 -0.709066 42.3048 2.1272 16.9104C2.9723 9.74965 9.74553 2.97643 16.9104 2.1272C42.3048 -0.709066 67.6993 -0.709066 93.0896 2.1272C100.25 2.97643 107.024 9.74965 107.877 16.9104C110.709 42.3048 110.709 67.6993 107.877 93.0896Z"
+                            fill="#001405"></path>
+                    </g>
+                    <g clip-path="url(#clip1_298_3486)">
+                        <path
+                            d="M43.375 71.2699V86.6107C43.375 89.1107 45.4003 91.1302 47.8939 91.1302H63.2328C65.7325 91.1302 67.7517 89.1046 67.7517 86.6107V78.9403C67.7517 75.5704 69.1141 72.523 71.3219 70.321C73.5297 68.1129 76.5767 66.7504 79.9401 66.7504H87.6095C90.1092 66.7504 92.1285 64.7248 92.1285 62.2309V46.8962C92.1285 44.3962 90.1032 42.3767 87.6095 42.3767H72.2768C69.777 42.3767 67.7578 44.4023 67.7578 46.8962V54.9377C67.7578 61.4645 62.4665 66.7504 55.9465 66.7504H47.9061C45.4064 66.7504 43.3872 68.776 43.3872 71.2699H43.375Z"
+                            fill="white"></path>
+                        <path
+                            d="M19 46.8957V62.2345C19 64.7342 21.0253 66.7535 23.5189 66.7535H38.8578C41.3575 66.7535 43.3767 64.7282 43.3767 62.2345V54.5651C43.3767 51.1957 44.7391 48.1486 46.9469 45.9469C49.1547 43.7391 52.2017 42.3767 55.5651 42.3767H63.2345C65.7342 42.3767 67.7535 40.3514 67.7535 37.8578V22.5189C67.7535 20.0192 65.7282 18 63.2345 18H47.9018C45.402 18 43.3828 20.0253 43.3828 22.5189V30.5594C43.3828 37.0854 38.0915 42.3707 31.5715 42.3707H23.5189C21.0192 42.3707 19 44.396 19 46.8896V46.8957Z"
+                            fill="white"></path>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_298_3486">
+                            <rect width="110" height="110" fill="white"></rect>
+                        </clipPath>
+                        <clipPath id="clip1_298_3486">
+                            <rect width="73.1302" height="73.1302" fill="white" transform="translate(19 18)"></rect>
+                        </clipPath>
+                    </defs>
+                </svg> Ctrl.</h1>
+            <div class="download">
+                <svg viewBox="0 0 56 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <path
+                            d="M14.4718 27.9453C21.9121 27.9453 27.9437 21.9134 27.9437 14.4726C27.9437 7.0319 21.9121 1 14.4718 1C7.03155 1 1 7.0319 1 14.4726C1 21.9134 7.03155 27.9453 14.4718 27.9453Z"
+                            fill="#FBE74E" stroke="#001405" stroke-width="2" stroke-miterlimit="10"></path>
+                    </g>
+                    <g>
+                        <path
+                            d="M27.4719 27.9453C34.9121 27.9453 40.9437 21.9134 40.9437 14.4726C40.9437 7.0319 34.9121 1 27.4719 1C20.0316 1 14 7.0319 14 14.4726C14 21.9134 20.0316 27.9453 27.4719 27.9453Z"
+                            fill="#FFCADC" stroke="#001405" stroke-width="2" stroke-miterlimit="10"></path>
+                    </g>
+                    <g>
+                        <path
+                            d="M41.4719 27.9453C48.9121 27.9453 54.9437 21.9134 54.9437 14.4726C54.9437 7.0319 48.9121 1 41.4719 1C34.0316 1 28 7.0319 28 14.4726C28 21.9134 34.0316 27.9453 41.4719 27.9453Z"
+                            fill="#9DC4F5" stroke="#001405" stroke-width="2" stroke-miterlimit="10"></path>
+                    </g>
+                </svg> Download for chrome
+            </div>
+
+        </div>
+        <div class="page-2">
+            <div class="left-box">
+                <h1>
+                    Create your<i class="ri-flashlight-line"></i> wallet in 2 clicks.</h1>
+                <button>Simple</button>
+            </div>
+            <div class="janeman">
+                <video muted autoplay loop
+                    src="https://player.vimeo.com/progressive_redirect/playback/996079329/rendition/720p/file.mp4?loc=external&oauth2_token_id=1772551642&signature=3eb9960e8d447b2dcbb16b894a5280d9e44cb94c4df48b037b386868b86ac91f"></video>
+            </div>
+            <div class="right-box">
+                <h1>Using your social account or Google.</h1>
+                <div class="icons">
+                    <div class="icon"><i class="ri-google-fill"></i></div>
+                    <div class="icon"><i class="ri-facebook-fill"></i></div>
+                    <div class="icon"><i class="ri-twitter-x-line"></i></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="page-3">
+            <div class="left-part">
+                <h1>1,800+ chains. One wallet.</h1>
+                <h3>Ctrl Wallet supports millions of assets and NFTs on 1,800+ blockchains.</h3>
+                <div class="input">
+                    <input type="text" placeholder="Search">
+                    <i class="ri-search-line"></i>
+                </div>
+            </div>
+            <div class="right-part">
+                <div class="icons">
+                    <div class="icon"><i class="ri-google-fill"></i></div>
+                    <div class="icon"><i class="ri-facebook-fill"></i></div>
+                    <div class="icon"><i class="ri-twitter-x-line"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="page-4">
+            <div class="banner">
+                <h2>Level up</h2>
+
+                <h1>Capture every opportunity <span></span> on every chain.</h1>
+            </div>
+            <div class="post">
+                <div class="left">
+                    <h1>
+                        10M+ assets at your fingertips
+                    </h1>
+                    <p>Ctrl supports all the newest memecoins and testnets on every EVM chain, Cosmos chains, Solana,
+                        Bitcoin, THORChain, TRON and more.</p>
+                </div>
+                <div class="right">
+                    <video autoplay muted loop
+                        src="https://player.vimeo.com/progressive_redirect/playback/995250592/rendition/1080p/file.mp4?loc=external&oauth2_token_id=1772650813&signature=b2976e99841c789425510ce8cf9fba6f4dd7fc84c5f8a2e11978189c78868a6e"></video>
+                </div>
+            </div>
+            <div class="post">
+                <div class="left">
+                    <h1>
+                        Connect to every application
+                    </h1>
+                    <p>Ctrl connects to every dapp on 2,100+ blockchains and testnets.</p>
+                </div>
+                <div class="right">
+                    <video autoplay muted loop
+                        src="https://player.vimeo.com/progressive_redirect/playback/995250613/rendition/1080p/file.mp4?loc=external&oauth2_token_id=1772650813&signature=f698816552ab26d4a5440691cf351637a7a77864a28875a24c14914a06fd2709"></video>
+                </div>
+            </div>
+            <div class="post">
+                <div class="left">
+                    <h1>
+                        One home for all your NFTs
+                    </h1>
+                    <p>
+                        Ctrl's NFT gallery displays all your NFTs from 30+ chains including ETH, BTC, Solana, Stargaze,
+                        and more.
+                    </p>
+                </div>
+                <div class="right">
+                    <video autoplay muted loop
+                        src="https://player.vimeo.com/progressive_redirect/playback/995250622/rendition/1080p/file.mp4?loc=external&oauth2_token_id=1772650813&signature=5177d7a526a6393b64e68bc0affdc183ade0193a9d19f5373d42ad4cf686f7d2"></video>
+                </div>
+            </div>
+        </div>
+        <div class="page-5">.
+            <h2>.Take ctrl</h2>
+            <h1>Join the <i class="ri-bear-smile-fill"></i> 450,000+ people </h1>
+            <h1> who trust Ctrl.</h1>
+            <div class="boxes">
+                <div class="box">
+                    <h1>Founded in 2020, Ctrl (formerly XDEFI) was the world's first multichain wallet.</h1>
+                    <video autoplay loop muted
+                        src="https://player.vimeo.com/progressive_redirect/playback/995250452/rendition/1080p/file.mp4?loc=external&oauth2_token_id=1772650813&signature=a363f94503b78cd6e3233b37d42e7464044ae42a0385e2b07889f95215360593"></video>
+                </div>
+                <div class="box">
+                    <h1>4.8 star rating in the Google Chrome Store after 650+ reviews</h1>
+                    <video autoplay loop muted
+                        src="https://player.vimeo.com/progressive_redirect/playback/995250465/rendition/1080p/file.mp4?loc=external&oauth2_token_id=1772650813&signature=e19da93baa7943b56cba6a7c59d6a5ba89f122dbd7015620450ea87c779a656f"></video>
+                </div>
+                <div class="box">
+                    <h1>24/7 live customer support. Our global team is here to help you.</h1>
+                    <video autoplay loop muted
+                        src="https://player.vimeo.com/progressive_redirect/playback/995250482/rendition/1080p/file.mp4?loc=external&oauth2_token_id=1772650813&signature=9f7304cab3b58a9b955e3fcc68ce0619f5a17f22f8e054a08d2565fe273c0a9f"></video>
+                </div>
+            </div>
+        </div>
+        <div data-scroll class="page-6">
+            <h2>Secure and private</h2>
+            <h1>The Secure way ..<i class="ri-globe-fill"></i>.. to Web3</h1>
+        </div>
+        <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="5" class="page-7">
+            <div class="boxes">
+                <div class="box">
+                    <h1>Portfolio overview</h1>
+                    <h2>Track your entire portfolio in one place.</h2>
+                    <video autoplay muted loop
+                        src="https://player.vimeo.com/progressive_redirect/playback/995250644/rendition/1080p/file.mp4?loc=external&oauth2_token_id=1772650813&signature=a6f92b063edd18dd34198e8dfcf7b557a5e0e0f68cb3b6e1342e38c1f6b23328"></video>
+                </div>
+                <div class="box">
+                    <h1>Hardware wallet support</h1>
+                    <h2>Keeps funds safe on your Ledger / Trezor.</h2>
+                    <video autoplay muted loop
+                        src="https://player.vimeo.com/progressive_redirect/playback/995250529/rendition/1080p/file.mp4?loc=external&oauth2_token_id=1772651873&signature=e287759776b45c8f4c444ce200d82dfccbdda2da7e2e8048f05ae43263dc6a6c"></video>
+                </div>
+                <div class="box">
+                    <h1>Malicious address alerts</h1>
+                    <h2>We flag malicious and suspicious addresses for you.</h2>
+                    <video autoplay muted loop
+                        src="https://player.vimeo.com/progressive_redirect/playback/995250665/rendition/1080p/file.mp4?loc=external&oauth2_token_id=1772651873&signature=e8d27cadcebc5702463e88dd5b3e63be8feca04a72d0a045f2c7b0c53da6cfaf"></video>
+                </div>
+                <div class="box">
+                    <h1>No IP tracking</h1>
+                    <h2>We do not record any user IP addresses.</h2>
+                    <video autoplay muted loop
+                        src="https://player.vimeo.com/progressive_redirect/playback/995250520/rendition/1080p/file.mp4?loc=external&oauth2_token_id=1772651873&signature=aa5a9c9e0fdfb7440c8a634e40b890c236e409f96202b0a8b594484e47342669"></video>
+                </div>
+            </div>
+        </div>
+        <div class="page-8">
+            <h2>Any question?</h2>
+            <div class="faq">
+                <h1>FAQ</h1>
+                <div class="option">
+                    <h2>XDEFI is migrating to Ctrl. What does this mean for me as an XDEFI user?</h2>
+                    <h1><i class="ri-add-circle-line"></i></h1>
+                </div>
+                <div class="option">
+                    <h2>When will XDEFI Wallet migrate to Ctrl Wallet?</h2>
+                    <h1><i class="ri-add-circle-line"></i></h1>
+                </div>
+                <div class="option">
+                    <h2>Is there a beta for the new wallet?</h2>
+                    <h1><i class="ri-add-circle-line"></i></h1>
+                </div>
+                <div class="option">
+                    <h2>Are my funds safe?</h2>
+                    <h1><i class="ri-add-circle-line"></i></h1>
+                </div>
+                <div class="option">
+                    <h2>Does Ctrl have control of my coins?</h2>
+                    <h1><i class="ri-add-circle-line"></i></h1>
+                </div>
+                <div class="option">
+                    <h2>What is a non-custodial wallet?</h2>
+                    <h1><i class="ri-add-circle-line"></i></h1>
+                </div>
+                <div class="option">
+                    <h2>I have questions or concerns, where is the best place to ask?</h2>
+                    <h1><i class="ri-add-circle-line"></i></h1>
+                </div>
+                <div class="option">
+                    <h2>How do I connect to a dapp if I don't see the Ctrl logo?</h2>
+                    <h1><i class="ri-add-circle-line"></i></h1>
+                </div>
+                <div class="option">
+                    <h2>Can I migrate my MetaMask, Phantom or Keplr wallet to Ctrl?</h2>
+                    <h1><i class="ri-add-circle-line"></i></h1>
+                </div>
+                <div class="option">
+                    <h2>How do I stake my $XDEFI tokens?</h2>
+                    <h1><i class="ri-add-circle-line"></i></h1>
+                </div>
+
+                <button id="btn2">Show all question</button>
+            </div>
+        </div>
+        <div class="page-9">
+            <div class="email">
+                <h1>Newsletter</h1>
+                <p>Subscribe to our amazing Newsletter to receive all the latest news & updates.</p>
+                <input type="text" placeholder="Your email address">
+                <button id="btn3">Subscribe</button>
+            </div>
+            <h1>Level up.</h1>
+        </div>
+        <footer>
+          <div class="footers">
+            <div class="footer-1">
+                <div class="gola"><i class="ri-twitter-x-line"></i></div>
+                <div class="gola"><i class="ri-discord-fill"></i></div>
+                <div class="gola"><i class="ri-telegram-2-fill"></i></div>
+                <div class="gola"><i class="ri-youtube-fill"></i></div>
+            </div>
+            <div class="footer-2">
+                <ul>
+                    <li><h3>Product</h3></li>
+                    <li>Security</li>
+                    <li>Support</li>
+                    <li>Alpha</li>
+                </ul>
+                <ul>
+                    <li><h3>Company</h3></li>
+                    <li>Introducing ctrl</li>
+                    <li>$XDEFI</li>
+                    <li>About</li>
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                </ul>
+                <ul>
+                    <li><h3>Resources</h3></li>
+                    <li>News</li>
+                    <li>Docs</li>
+                    <li>Media kit</li>
+                    <li>shortcuts</li>
+                </ul>
+            </div>
+          </div>
+
+          <div class="base-footer">
+            <h6>Terms of use</h6>
+            <h6>Privacy policy</h6>
+            <h6>Cookie Preferences</h6>
+          </div>
+        </footer>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
